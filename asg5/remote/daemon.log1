@@ -1,0 +1,104 @@
+Script started on Wed 16 Mar 2016 11:37:27 AM PDT
+cixd 6969
+You are currently using 38% (390.8 MiB) of your 1.0 GiB quota.
+]0;brtsai@unix2:remote[brtsai@unix2 remote]$ cixd 6969
+cixd(8906): starting
+cixd(8906): unix2.lt.ucsc.edu (128.114.104.56) accepting port 6969
+cixd(8906): accepted localhost (127.0.0.1) port 52895
+cixd(8906): forked cixserver pid 8985
+cixd(8906): unix2.lt.ucsc.edu (128.114.104.56) accepting port 6969
+cixd-server(8985): connected to localhost (127.0.0.1) port 52895
+cixd(8906): accepted localhost (127.0.0.1) port 52896
+cixd(8906): forked cixserver pid 9064
+cixd(8906): unix2.lt.ucsc.edu (128.114.104.56) accepting port 6969
+cixd-server(9064): connected to localhost (127.0.0.1) port 52896
+cixd-server(9064): received header {0,CIX_LS=4,""}
+cixd-server(9064): signal_handler: caught Child exited
+cixd-server(9064): child 9317 exit 0 signal 0 core 0
+cixd-server(9064): ls -l 2>&1: No child processes
+cixd-server(9064): sending header {233,CIX_LSOUT=8,""}
+cixd-server(9064): sent 233 bytes
+cixd-server(8985): received header {0,CIX_LS=4,""}
+cixd-server(8985): signal_handler: caught Child exited
+cixd-server(8985): child 9354 exit 0 signal 0 core 0
+cixd-server(8985): ls -l 2>&1: No child processes
+cixd-server(8985): sending header {233,CIX_LSOUT=8,""}
+cixd-server(8985): sent 233 bytes
+cixd-server(8985): received header {516,CIX_PUT=5,"localfile"}
+cixd-server(8985): received 516 bytes
+this is a test
+cixd-server(8985): sending header {0,CIS_ACK=9,"localfile"}
+cixd-server(8985): received header {644,CIX_PUT=5,"localtto"}
+cixd-server(8985): received 644 bytes
+this is a test
+cixd-server(8985): sending header {0,CIS_ACK=9,"localtto"}
+cixd-server(8985): received header {0,CIX_LS=4,""}
+cixd-server(8985): signal_handler: caught Child exited
+cixd-server(8985): child 9495 exit 0 signal 0 core 0
+cixd-server(8985): ls -l 2>&1: No child processes
+cixd-server(8985): sending header {346,CIX_LSOUT=8,""}
+cixd-server(8985): sent 346 bytes
+cixd-server(9064): received header {0,CIX_LS=4,""}
+cixd-server(9064): signal_handler: caught Child exited
+cixd-server(9064): child 9547 exit 0 signal 0 core 0
+cixd-server(9064): ls -l 2>&1: No child processes
+cixd-server(9064): sending header {346,CIX_LSOUT=8,""}
+cixd-server(9064): sent 346 bytes
+cixd-server(9064): received header {0,CIX_GET=2,"server1"}
+cixd-server(9064): sending header {858,CIX_FILE=7,""}
+cixd-server(9064): sent 858 bytes
+cixd-server(9064): localhost (127.0.0.1) port 52896 is closed
+cixd-server(9064): finishing
+cixd-server(9064): caught cix_exit
+cixd-server(9064): finishing
+cixd(8906): signal_handler: caught Child exited
+cixd(8906): child 9064 exit 0 signal 0 core 0
+cixd(8906): listener.accept caught Interrupted system call
+cixd(8906): accepted localhost (127.0.0.1) port 52902
+cixd(8906): forked cixserver pid 9613
+cixd(8906): unix2.lt.ucsc.edu (128.114.104.56) accepting port 6969
+cixd-server(9613): connected to localhost (127.0.0.1) port 52902
+cixd-server(9613): received header {0,CIX_GET=2,"localfile"}
+cixd-server(9613): sending header {516,CIX_FILE=7,""}
+cixd-server(9613): sent 516 bytes
+cixd-server(9613): received header {0,CIX_RM=6,"to-remove"}
+cixd-server(9613): received header {0,CIX_RM=6,"server1"}
+cixd-server(9613): received header {0,CIX_LS=4,""}
+cixd-server(9613): signal_handler: caught Child exited
+cixd-server(9613): child 9913 exit 0 signal 0 core 0
+cixd-server(9613): ls -l 2>&1: No child processes
+cixd-server(9613): sending header {234,CIX_LSOUT=8,""}
+cixd-server(9613): sent 234 bytes
+cixd-server(9613): localhost (127.0.0.1) port 52902 is closed
+cixd-server(9613): finishing
+cixd-server(9613): caught cix_exit
+cixd-server(9613): finishing
+cixd(8906): signal_handler: caught Child exited
+cixd(8906): child 9613 exit 0 signal 0 core 0
+cixd(8906): listener.accept caught Interrupted system call
+cixd-server(8985): received header {0,CIX_LS=4,""}
+cixd-server(8985): signal_handler: caught Child exited
+cixd-server(8985): child 9992 exit 0 signal 0 core 0
+cixd-server(8985): ls -l 2>&1: No child processes
+cixd-server(8985): sending header {234,CIX_LSOUT=8,""}
+cixd-server(8985): sent 234 bytes
+cixd-server(8985): localhost (127.0.0.1) port 52895 is closed
+cixd-server(8985): finishing
+cixd-server(8985): caught cix_exit
+cixd-server(8985): finishing
+cixd(8906): signal_handler: caught Child exited
+cixd(8906): child 8985 exit 0 signal 0 core 0
+cixd(8906): listener.accept caught Interrupted system call
+^C
+]0;brtsai@unix2:remote[brtsai@unix2 remote]$ ls -la
+total 505
+drwx------. 2 brtsai   users   2048 Mar 16 11:38 [0m[01;34m.[0m
+drwx------. 6 mwswaffa users   2048 Mar 16 11:37 [01;34m..[0m
+-rwxr-xr-x. 1 brtsai   users 506699 Mar 16 11:37 [01;32mcixd[0m
+-rw-r--r--. 1 brtsai   users   4096 Mar 16 11:38 daemon.log1
+-rw-r--r--. 1 brtsai   users    516 Mar 16 11:38 localfile
+-rw-r--r--. 1 brtsai   users    644 Mar 16 11:38 localtto
+]0;brtsai@unix2:remote[brtsai@unix2 remote]$ exit
+exit
+
+Script done on Wed 16 Mar 2016 11:38:30 AM PDT

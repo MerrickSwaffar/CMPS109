@@ -1,0 +1,22 @@
+mwswaffa@ucsc.edu
+CMPS 109 Assignment 3
+2/16/2016
+
+keyvalue-manage a list of key and value pairs.
+
+-use make or gmake to build the .exe.
+-type keyvalue file1 file2 ... to run.
+
+included files:
+listmap.h
+listmap.tcc
+main.cpp
+Makefile
+README
+trace.cpp
+trace.h
+util.cpp
+util.h
+util.tcc
+xless.h
+xpair.h

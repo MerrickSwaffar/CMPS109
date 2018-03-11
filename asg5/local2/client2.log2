@@ -1,0 +1,107 @@
+Script started on Wed 16 Mar 2016 11:37:35 AM PDT
+../cix localhost 6969
+You are currently using 38% (390.8 MiB) of your 1.0 GiB quota.
+]0;brtsai@unix2:local2[brtsai@unix2 local2]$ ../cix localhost 6969
+cix(9063): starting
+cix(9063): unix2.lt.ucsc.edu (128.114.104.56)
+cix(9063): connecting to localhost port 6969
+cix(9063): connected to localhost (127.0.0.1) port 6969
+ls
+cix(9063): command ls
+cix(9063): sending header {0,CIX_LS=4,""}
+cix(9063): received header {233,CIX_LSOUT=8,""}
+cix(9063): received 233 bytes
+total 497
+-rwxr-xr-x. 1 brtsai users 506699 Mar 16 11:37 cixd
+-rw-r--r--. 1 brtsai users      0 Mar 16 11:37 daemon.log1
+-rw-------. 1 brtsai users    858 Mar 15 12:41 server1
+-rw-------. 1 brtsai users    280 Mar 15 12:41 to-remove
+ls
+cix(9063): command ls
+cix(9063): sending header {0,CIX_LS=4,""}
+cix(9063): received header {346,CIX_LSOUT=8,""}
+cix(9063): received 346 bytes
+total 499
+-rwxr-xr-x. 1 brtsai users 506699 Mar 16 11:37 cixd
+-rw-r--r--. 1 brtsai users      0 Mar 16 11:37 daemon.log1
+-rw-r--r--. 1 brtsai users    516 Mar 16 11:38 localfile
+-rw-r--r--. 1 brtsai users    644 Mar 16 11:38 localtto
+-rw-------. 1 brtsai users    858 Mar 15 12:41 server1
+-rw-------. 1 brtsai users    280 Mar 15 12:41 to-remove
+get server1
+cix(9063): command get server1
+cix(9063): sending header {0,CIX_GET=2,"server1"}
+cix(9063): received header {858,CIX_FILE=7,""}
+cix(9063): received 858 bytes
+exit
+cix(9063): command exit
+cix(9063): caught cix_exit
+cix(9063): finishing
+]0;brtsai@unix2:local2[brtsai@unix2 local2]$ cat server1 
+This is a remote server file.
+Originally it was only in the remote directory.
+This is a remote server file.
+Originally it was only in the remote directory.
+This is a remote server file.
+Originally it was only in the remote directory.
+This is a remote server file.
+Originally it was only in the remote directory.
+This is a remote server file.
+Originally it was only in the remote directory.
+This is a remote server file.
+Originally it was only in the remote directory.
+This is a remote server file.
+Originally it was only in the remote directory.
+This is a remote server file.
+Originally it was only in the remote directory.
+This is a remote server file.
+Originally it was only in the remote directory.
+This is a remote server file.
+Originally it was only in the remote directory.
+This is a remote server file.
+Originally it was only in the remote directory.
+]0;brtsai@unix2:local2[brtsai@unix2 local2]$ cat server1[24G../cix localhost 6969
+cix(9608): starting
+cix(9608): unix2.lt.ucsc.edu (128.114.104.56)
+cix(9608): connecting to localhost port 6969
+cix(9608): connected to localhost (127.0.0.1) port 6969
+get localfile
+cix(9608): command get localfile
+cix(9608): sending header {0,CIX_GET=2,"localfile"}
+cix(9608): received header {516,CIX_FILE=7,""}
+cix(9608): received 516 bytes
+rm to-remove
+cix(9608): command rm to-remove
+cix(9608): sending header {0,CIX_RM=6,"to-remove"}
+cix(9608): received header {0,CIS_ACK=9,"to-remove"}
+cix(9608): received 0 bytes
+rm server1
+cix(9608): command rm server1
+cix(9608): sending header {0,CIX_RM=6,"server1"}
+cix(9608): received header {0,CIS_ACK=9,"server1"}
+cix(9608): received 0 bytes
+ls
+cix(9608): command ls
+cix(9608): sending header {0,CIX_LS=4,""}
+cix(9608): received header {234,CIX_LSOUT=8,""}
+cix(9608): received 234 bytes
+total 497
+-rwxr-xr-x. 1 brtsai users 506699 Mar 16 11:37 cixd
+-rw-r--r--. 1 brtsai users      0 Mar 16 11:37 daemon.log1
+-rw-r--r--. 1 brtsai users    516 Mar 16 11:38 localfile
+-rw-r--r--. 1 brtsai users    644 Mar 16 11:38 localtto
+exit
+cix(9608): command exit
+cix(9608): caught cix_exit
+cix(9608): finishing
+]0;brtsai@unix2:local2[brtsai@unix2 local2]$ ls -la
+total 6
+drwx------. 2 brtsai   users 2048 Mar 16 11:38 [0m[01;34m.[0m
+drwx------. 6 mwswaffa users 2048 Mar 16 11:37 [01;34m..[0m
+-rw-r--r--. 1 brtsai   users    0 Mar 16 11:37 client2.log2
+-rw-r--r--. 1 brtsai   users  516 Mar 16 11:38 localfile
+-rw-r--r--. 1 brtsai   users  858 Mar 16 11:38 server1
+]0;brtsai@unix2:local2[brtsai@unix2 local2]$ exit
+exit
+
+Script done on Wed 16 Mar 2016 11:38:22 AM PDT

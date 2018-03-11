@@ -1,0 +1,9 @@
+Makefile:56: Makefile.dep: No such file or directory
+gmake --no-print-directory dep
+g++ -std=gnu++14 -MM commands.cpp debug.cpp file_sys.cpp util.cpp main.cpp >>Makefile.dep
+g++ -std=gnu++14 -g -O0 -Wall -Wextra -c commands.cpp
+g++ -std=gnu++14 -g -O0 -Wall -Wextra -c debug.cpp
+g++ -std=gnu++14 -g -O0 -Wall -Wextra -c file_sys.cpp
+g++ -std=gnu++14 -g -O0 -Wall -Wextra -c util.cpp
+g++ -std=gnu++14 -g -O0 -Wall -Wextra -c main.cpp
+g++ -std=gnu++14 -g -O0 -Wall -Wextra -o yshell commands.o debug.o file_sys.o util.o main.o

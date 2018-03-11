@@ -1,0 +1,15 @@
+mwswaffa@ucsc.edu
+CMPS 109 Assignment 2
+2/1/2016
+
+yshell- a simplified version of a command line shell.
+use either make or gmake to build the executable. 
+see assignment specifications for commands.
+
+files submitted:
+commands.h/.cpp
+debug.h/.cpp 
+file_sys.h/.cpp
+main.cpp
+Makefile
+util.h/.cpp

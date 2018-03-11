@@ -1,0 +1,4 @@
+checksource: *.cc: No such file or directory
+checksource: missing newline at end of line
+   file "README": 1 errors: line 15
+checksource: TOTAL COMPLAINTS: 2

@@ -1,0 +1,58 @@
+test1.in: 1: a=b
+a = b
+test1.in: 2: key=value
+key = value
+test1.in: 3: this=is a test
+this = is a test
+test1.in: 4: this
+this = is a test
+test1.in: 5: key
+key = value
+test1.in: 6: a
+a = b
+test1.in: 7: # $Id: test1.in,v 1.1 2010-02-09 20:31:28-08 - - $
+test2.in: 8: key=value
+key = value
+test2.in: 9: second=third
+second = third
+test2.in: 10: foo=bar
+foo = bar
+test2.in: 11: f1=51
+f1 = 51
+test2.in: 12: f2=52
+f2 = 52
+test2.in: 13: foobar=baz
+foobar = baz
+test2.in: 14: baz=quux
+baz = quux
+test2.in: 15: this=is=a=test
+this = is=a=test
+test2.in: 16: =
+a = b
+baz = quux
+f1 = 51
+f2 = 52
+foo = bar
+foobar = baz
+key = value
+second = third
+this = is=a=test
+test2.in: 17: a=value
+a = value
+test2.in: 18: b=value
+b = value
+test2.in: 19: =value
+a = value
+b = value
+key = value
+test2.in: 20: # $Id: test2.in,v 1.1 2010-02-09 20:31:28-08 - - $
+test3.in: 21: # Comments should be ignored
+test3.in: 22: 
+test3.in: 23: 
+test3.in: 24: also ignore blank lines
+also ignore blank lines: key not found
+test3.in: 25: this file contains nonexistent keys
+this file contains nonexistent keys: key not found
+test3.in: 26: all output should be error messages
+all output should be error messages: key not found
+test3.in: 27: # $Id: test3.in,v 1.1 2010-02-09 20:31:28-08 - - $

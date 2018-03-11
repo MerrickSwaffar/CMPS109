@@ -1,0 +1,23 @@
+mwswaffa@ucsc.edu
+CMPS 109 Assignment 4
+2/29/2016
+
+gdraw- a drawing program displayinf objects in a window.
+
+use either make or gmake to create the gdraw executable.
+
+to run: gdraw [options] [filename]
+
+files submitted:
+colors.cppgen
+debug.cpp/.h
+graphics.cpp/.h
+interp.cpp/.h
+main.cpp
+Makefile
+mk-colors.perl
+README
+rgbcolor.cpp/.h
+shape.cpp/.h
+util.cpp/.h/.tcc
+

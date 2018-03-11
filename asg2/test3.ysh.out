@@ -1,0 +1,11 @@
+./yshell build Feb  8 2016 08:51:12
+% mkdir dir
+% cd dir
+% mkdir dir2
+% mkdir dir3
+% cd dir3
+% pwd
+/dir/dir3
+% make file with stuff
+% make another file with stuff
+% cat fle another

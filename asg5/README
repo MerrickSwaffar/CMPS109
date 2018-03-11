@@ -1,0 +1,18 @@
+mwswaffa@ucsc.edu
+CMPS 109 Assignment 5
+3/11/2016
+
+cixd- the server application. 
+   usage: cixd [port]
+cix- the client application that connects to cixd. 
+   usage: cix [host] [port]
+
+Files Submitted:
+cix.cpp
+cixd.cpp
+logstream.h
+Makefile
+protocol.cpp
+protocol.h
+sockets.cpp
+sockets.h
